@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "astral-tl"
+version = "0.0.1"
+description = "Telegram client library for Astral userbots"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["beautifulsoup4", "pyaes", "rsa"]
+
+[project.urls]
+Source = "https://github.com/neistv/astral-tl"
+
+[tool.setuptools.packages.find]
+include = ["astraltl*"]
